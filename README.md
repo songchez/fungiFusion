@@ -4,6 +4,7 @@ FungiFusion은 초기 단계 창업자와 혁신가들을 위한 독창적인 �
 
 ## 프로젝트 구조
 
+```bash
 vintage-minimalism/
 ├── public/
 │ └── index.html
@@ -14,6 +15,7 @@ vintage-minimalism/
 │ ├── Home.js
 │ └── About.js
 └── package.json
+```
 
 ## 설치 및 실행 방법
 

@@ -1,4 +1,4 @@
-# FungiFusion - Interactive Landing Page
+# FungiFusion - Landing Page
 
 FungiFusion은 초기 단계 창업자와 혁신가들을 위한 독창적인 펀딩 및 아이디어 검증 플랫폼입니다. 이 프로젝트는 React, Three.js, TailwindCSS (daisyUI)를 사용하여 빈티지 미니멀리즘 스타일의 인터랙티브 랜딩 페이지를 구축합니다.
 

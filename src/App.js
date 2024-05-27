@@ -1,29 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import "./App.css";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className="bg-gray-100 py-5 shadow-md">
+        <header className="bg-slate-900 shadow-md">
           <div className="container mx-auto flex justify-between items-center">
-            <img
-              src="path/to/logo.png"
-              alt="FungiFusion Logo"
-              className="h-12"
-            />
+            <img src="/logo.png" alt="FungiFusion Logo" className="h-20" />
             <nav>
               <ul className="flex space-x-4">
                 <li>
-                  <Link to="/" className="text-gray-800 text-lg">
+                  <Link to="/" className="btn btn-ghost text-lg">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="text-gray-800 text-lg">
+                  <Link to="/about" className="btn btn-ghost text-lg">
                     About Us
                   </Link>
                 </li>
@@ -31,10 +26,10 @@ function App() {
             </nav>
           </div>
         </header>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
     </Router>
   );

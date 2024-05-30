@@ -5,16 +5,18 @@ FungiFusion은 초기 단계 창업자와 혁신가들을 위한 독창적인 �
 ## 프로젝트 구조
 
 ```bash
-vintage-minimalism/
-├── public/
-│ └── index.html
-├── src/
-│ ├── App.js
-│ ├── index.js
-│ ├── index.css
-│ ├── Home.js
-│ └── About.js
-└── package.json
+├── components/
+│   ├── NavBar.jsx
+│   ├── Banner.jsx
+│   ├── Features.jsx
+│   ├── About.jsx
+│   ├── SuccessStories.jsx
+│   ├── CallToAction.jsx
+│   ├── Footer.jsxw
+│
+├── App.js
+└── index.js
+
 ```
 
 ## 설치 및 실행 방법

@@ -1,29 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Home";
+import NavBar from "./components/NavBar";
+import Banner from "./components/Banner";
+import Features from "./components/Features";
+import About from "./components/About";
+import SuccessStories from "./components/SuccessStories";
+import CallToAction from "./components/CallToAction";
+import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <Router>
-      <div className="App bg-gradient-to-tl from-primary/35 via-secondary/35 to-indigo-100">
-        <header className="shadow-sm">
-          <div className="container mx-auto flex justify-center items-center">
-            <div className="flex">
-              <img
-                src="/logo.png"
-                alt="FungiFusion Logo"
-                className="h-14 p-2"
-              />
-              <h1 className="p-2 text-2xl">FungiFusion</h1>
-            </div>
-          </div>
-        </header>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-}
+const App = () => (
+  <div className="w-full min-h-screen">
+    <NavBar />
+    <Banner />
+    <Features />
+    <About />
+    <SuccessStories />
+    <CallToAction />
+    <Footer />
+  </div>
+);
 
 export default App;

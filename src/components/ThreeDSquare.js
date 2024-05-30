@@ -182,23 +182,15 @@ const InteractiveGeometry = React.memo(() => {
   );
 });
 
-function Home() {
+function ThreeDSquare() {
   return (
-    <main className="flex justify-center items-center">
-      <div className="text-center">
-        <h1 className="text-xl">
-          혁신적인 아이디어를 검증하고 자금을 확보하여 사업을 성장시키세요.
-        </h1>
-        <button className="btn btn-primary mt-5">지금 시작하기</button>
-      </div>
-      <Canvas style={{ width: "30vw", height: "30vw" }}>
-        <ambientLight intensity={5} />
-        <directionalLight position={[2, 1, 1]} intensity={1.5} />
-        <directionalLight position={[0, -1, 0]} intensity={4.5} />
-        <InteractiveGeometry />
-      </Canvas>
-    </main>
+    <Canvas style={{ width: "30vw", height: "30vw" }}>
+      <ambientLight intensity={5} />
+      <directionalLight position={[2, 1, 1]} intensity={1.5} />
+      <directionalLight position={[0, -1, 0]} intensity={4.5} />
+      <InteractiveGeometry />
+    </Canvas>
   );
 }
 
-export default Home;
+export default ThreeDSquare;

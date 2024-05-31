@@ -2,7 +2,7 @@ import React from "react";
 import ThreeDSquare from "./ThreeDSquare";
 
 const Banner = () => (
-  <div className="hero min-h-screen bg-base-200">
+  <div className="hero min-h-[70vh] bg-base-200">
     <div className="hero-content flex-col lg:flex-row">
       <div className="max-w-md">
         <h1 className="text-5xl font-bold">
